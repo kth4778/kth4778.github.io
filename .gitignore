@@ -25,3 +25,7 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Claude Code (개인 워크플로우 — 공개 비공개)
+.claude/
+CLAUDE.md
