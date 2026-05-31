@@ -67,6 +67,8 @@ public class Singleton {
 
 `synchronized`로 잠금을 걸고, 잠금 안에서 한 번 더 체크한다. `volatile`은 CPU 캐시가 아닌 메인 메모리에서 직접 읽도록 강제해서 스레드 간 값 불일치를 막는다. 이걸 빠뜨리면 여전히 문제가 생길 수 있다는 게 처음엔 이해가 잘 안 됐는데, CPU가 변수값을 스레드별 캐시에 따로 저장한다는 걸 알고 나서야 납득이 됐다.
 
+![Double-Checked Locking 흐름](/assets/img/posts/singleton-pattern/double-checked-locking.png)
+
 ---
 
 # 제일 깔끔한 방법은 Enum
