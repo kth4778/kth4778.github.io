@@ -1,7 +1,7 @@
 ---
 title: "HLS부터 LLHLS까지 — 스트리밍 지연을 줄이는 방법 (이론)"
 date: 2026-05-28 00:00:00 +0900
-categories: [백엔드]
+categories: [백엔드, 스트리밍]
 tags: [hls, llhls, streaming, cdn, tcp, ffmpeg]
 ---
 
