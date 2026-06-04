@@ -148,6 +148,8 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
+future: true  # 오늘 날짜 포스트가 빌드 시점보다 미래여도 표시
+
 paginate: 10
 
 # The base URL of your site
