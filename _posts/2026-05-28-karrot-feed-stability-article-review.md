@@ -3,6 +3,9 @@ title: "당근 기술 블로그 — 처음 살펴본 서킷 브레이커와 SLA"
 date: 2026-05-28 00:00:00 +0900
 categories: [백엔드, 시스템 설계]
 tags: [circuit-breaker, sla, slo, sli, profiling, microservice]
+image:
+  path: /assets/img/posts/karrot-feed-stability/circuit-breaker-states.png
+  alt: "서킷 브레이커 상태"
 ---
 
 멘토님이 당근 기술 블로그 링크를 보내주셨다. 피드시스템 안정성 향상기인데,
