@@ -3,6 +3,9 @@ title: "DASH — 유튜브가 LLHLS 대신 선택한 이유"
 date: 2026-06-05 10:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [dash, hls, llhls, streaming, mpd, abr, codec, youtube, vp9]
+image:
+  path: /assets/img/posts/dash-streaming-protocol/hls-vs-dash-comparison.png
+  alt: "HLS vs DASH 비교"
 ---
 
 지난번에 HLS랑 LLHLS를 정리했는데, 쓰면서 계속 걸리는 게 있었다.
