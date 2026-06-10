@@ -37,8 +37,6 @@ public class Singleton {
 
 `Singleton.getInstance()`를 열 번 호출해도 항상 같은 객체가 반환된다. 생각보다 원리 자체는 단순했다.
 
-![싱글톤 패턴 클래스 구조](/assets/img/posts/singleton-pattern/singleton-structure.png)
-
 ---
 
 # 멀티스레드에서 터지는 이유

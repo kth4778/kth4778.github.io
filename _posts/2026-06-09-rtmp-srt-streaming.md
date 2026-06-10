@@ -12,8 +12,6 @@ image:
 
 HLS, DASH는 "시청자에게 뿌리는" 프로토콜인데, OBS에서 방송 시작 버튼을 누르면 실제로 무슨 프로토콜로 서버에 영상을 보내는 건지 한 번도 제대로 생각해본 적이 없었다. 그냥 유튜브 스트림 키 넣고 버튼 누르면 되는 거 아닌가 했는데, 그 뒤에 RTMP가 있었다.
 
-![스트리밍 전체 파이프라인](/assets/img/posts/rtmp-srt-streaming/streaming-pipeline.png)
-
 ---
 
 # RTMP — Flash의 유산이 왜 아직도 살아있나
