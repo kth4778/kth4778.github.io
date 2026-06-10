@@ -1,1 +1,13 @@
 <meta name="naver-site-verification" content="3acf5e196b4f28c3006c9421b91b997f79ef39aa" />
+<style>
+  /* 포스트 내부 상단 hero 이미지 숨김 */
+  /* 홈 목록의 썸네일은 div.preview-img, 포스트 내부 hero는 a.preview-img — 태그가 달라 구분 가능 */
+  a.preview-img,
+  a.preview-img + figcaption {
+    display: none !important;
+  }
+  /* hero 이미지를 감싸는 빈 wrapper div 여백 제거 */
+  .mt-3.mb-3:has(a.preview-img) {
+    display: none !important;
+  }
+</style>
