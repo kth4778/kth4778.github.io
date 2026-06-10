@@ -72,8 +72,6 @@ payment.pay(10000);
 팩토리 패턴의 핵심은 "어떻게 만드는지"는 공장이 알고, 사용하는 쪽은
 "뭘 원하는지"만 말하면 된다는 거다.
 
-![팩토리 패턴 구조](/assets/img/posts/factory-strategy-pattern/factory-pattern.png)
-
 ---
 
 # 추상 팩토리 — 공장도 여러 종류일 때

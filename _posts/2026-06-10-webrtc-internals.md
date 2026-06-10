@@ -4,8 +4,8 @@ date: 2026-06-10 14:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [webrtc, ice, stun, turn, sdp, dtls, srtp, sfu, mcu, p2p, streaming, mediasoup]
 image:
-  path: /assets/img/posts/webrtc-internals/sdp-signaling-flow.png
-  alt: "WebRTC SDP 시그널링 흐름"
+  path: /assets/img/posts/webrtc-internals/stun-vs-turn.png
+  alt: "STUN vs TURN — ICE 경로 결정"
 ---
 
 SW마에스트로 프로젝트에서 실시간 기능을 붙여야 했다. 처음엔 그냥 WebSocket으로 해결할 수 있을 거라 생각했다. 그런데 팀원끼리 논의하다 보니 "그럼 영상은요?" 라는 질문이 나왔다. WebSocket으로 영상을 어떻게 처리하지?
