@@ -255,4 +255,4 @@ CLAUDE.md는 하나가 아니다. 위치에 따라 세 층으로 나뉜다.
 
 # 참고 자료
 
-[![Claude Code Tutorial #2 - CLAUDE.md Files & /init](https://img.youtube.com/vi/i_OHQH4-M2Y/maxresdefault.jpg)](https://www.youtube.com/watch?v=i_OHQH4-M2Y)
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/i_OHQH4-M2Y" title="Claude Code Tutorial #2 - CLAUDE.md Files & /init" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border-radius:12px;"></iframe>
