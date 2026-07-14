@@ -218,6 +218,7 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
+  - assets/img/favicon-source.png
 
 jekyll-archives:
   enabled: [categories, tags]
