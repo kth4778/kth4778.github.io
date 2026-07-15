@@ -498,7 +498,7 @@ layout: base
     </div>
     {% if page.tags %}
       <div class="post-tags">
-        {% for tag in page.tags %}<a class="post-tag" href="{{ '/tags/' | append: tag | slugify | append: '/' | relative_url }}">#{{ tag }}</a>{% endfor %}
+        {% for tag in page.tags %}{% assign tag_slug = tag | slugify %}<a class="post-tag" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">#{{ tag }}</a>{% endfor %}
       </div>
     {% endif %}
   </header>
@@ -564,7 +564,7 @@ layout: base
     {% assign top_categories = top_categories | sort %}
     {% for cat in top_categories %}
       <li class="archive-group">
-        <a href="{{ '/categories/' | append: cat | slugify | append: '/' | relative_url }}">{{ cat }}</a>
+        {% assign cat_slug = cat | slugify %}<a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ cat }}</a>
         <span class="archive-group-count">{{ site.categories[cat] | size }}</span>
       </li>
     {% endfor %}
@@ -634,7 +634,7 @@ layout: base
   <ul class="tag-cloud">
     {% assign tag_names = site.tags | sort %}
     {% for tag in tag_names %}
-      <li><a class="tag-pill" href="{{ '/tags/' | append: tag[0] | slugify | append: '/' | relative_url }}">#{{ tag[0] }}<span>{{ tag[1] | size }}</span></a></li>
+      {% assign tag_slug = tag[0] | slugify %}<li><a class="tag-pill" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">#{{ tag[0] }}<span>{{ tag[1] | size }}</span></a></li>
     {% endfor %}
   </ul>
 </section>
