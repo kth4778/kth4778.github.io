@@ -1,0 +1,15 @@
+---
+layout: base
+---
+<section class="home-hero">
+  <h1>{{ site.title }}</h1>
+  <p class="home-tagline">{{ site.tagline }}</p>
+</section>
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+    {% include new-post-card.html post=post %}
+  {% endfor %}
+</ul>
+
+{% include new-pager.html %}
