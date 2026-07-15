@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.social.name }}</p>
+    <p class="footer-links">
+      {% for link in site.social.links %}<a href="{{ link }}" target="_blank" rel="noopener">{{ link | remove_first: 'https://' | split: '/' | first }}</a>{% endfor %}
+      <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>
+    </p>
+  </div>
+</footer>

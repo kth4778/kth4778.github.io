@@ -1,0 +1,12 @@
+<header class="site-nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav class="nav-tabs">
+      <a href="{{ '/' | relative_url }}" class="nav-tab{% if page.layout == 'home' %} is-active{% endif %}">Home</a>
+      <a href="{{ '/categories/' | relative_url }}" class="nav-tab{% if page.layout == 'categories' or page.layout == 'category' %} is-active{% endif %}">Categories</a>
+      <a href="{{ '/tags/' | relative_url }}" class="nav-tab{% if page.layout == 'tags' or page.layout == 'tag' %} is-active{% endif %}">Tags</a>
+      <a href="{{ '/archives/' | relative_url }}" class="nav-tab{% if page.layout == 'archives' %} is-active{% endif %}">Archives</a>
+      <a href="{{ '/about/' | relative_url }}" class="nav-tab{% if page.layout == 'page' %} is-active{% endif %}">About</a>
+    </nav>
+  </div>
+</header>
