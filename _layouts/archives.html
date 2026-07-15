@@ -1,0 +1,20 @@
+---
+layout: base
+---
+<section class="archive-index">
+  <h1 class="archive-title">Archives</h1>
+  {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+  {% for year in posts_by_year %}
+    <div class="archive-year">
+      <h2>{{ year.name }}</h2>
+      <ul class="archive-post-list">
+        {% for post in year.items %}
+          <li>
+            <time>{{ post.date | date: '%m.%d' }}</time>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</section>
