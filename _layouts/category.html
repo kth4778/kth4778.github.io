@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<section class="archive-page">
+  <h1 class="archive-title">{{ page.title }}</h1>
+  <p class="post-meta">{{ page.posts | size }}개의 글</p>
+  <ul class="post-list">
+    {% for post in page.posts %}
+      {% include new-post-card.html post=post %}
+    {% endfor %}
+  </ul>
+</section>

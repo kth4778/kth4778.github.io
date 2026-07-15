@@ -1,0 +1,22 @@
+---
+layout: base
+---
+<section class="archive-index">
+  <h1 class="archive-title">Categories</h1>
+  <ul class="archive-group-list">
+    {% assign top_categories = "" | split: "" %}
+    {% for post in site.posts %}
+      {% assign top = post.categories[0] %}
+      {% unless top_categories contains top %}
+        {% assign top_categories = top_categories | push: top %}
+      {% endunless %}
+    {% endfor %}
+    {% assign top_categories = top_categories | sort %}
+    {% for cat in top_categories %}
+      <li class="archive-group">
+        {% assign cat_slug = cat | slugify %}<a href="{{ '/categories/' | append: cat_slug | append: '/' | relative_url }}">{{ cat }}</a>
+        <span class="archive-group-count">{{ site.categories[cat] | size }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
