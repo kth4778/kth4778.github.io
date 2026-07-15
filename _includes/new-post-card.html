@@ -1,0 +1,14 @@
+<li class="post-card">
+  <div class="post-card-date">
+    <span class="post-card-day">{{ include.post.date | date: '%d' }}</span>
+    <span class="post-card-month">{{ include.post.date | date: '%b' | upcase }}</span>
+  </div>
+  <div class="post-card-body">
+    <div class="post-card-tags">
+      {% for tag in include.post.tags %}<span class="post-card-tag">#{{ tag }}</span>{% endfor %}
+    </div>
+    <h2 class="post-card-title"><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h2>
+    <p class="post-card-excerpt">{{ include.post.excerpt | strip_html | truncate: 90 }}</p>
+    <a class="post-card-more" href="{{ include.post.url | relative_url }}">Read More →</a>
+  </div>
+</li>
