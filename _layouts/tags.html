@@ -1,0 +1,12 @@
+---
+layout: base
+---
+<section class="archive-index">
+  <h1 class="archive-title">Tags</h1>
+  <ul class="tag-cloud">
+    {% assign tag_names = site.tags | sort %}
+    {% for tag in tag_names %}
+      {% assign tag_slug = tag[0] | slugify %}<li><a class="tag-pill" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">#{{ tag[0] }}<span>{{ tag[1] | size }}</span></a></li>
+    {% endfor %}
+  </ul>
+</section>
