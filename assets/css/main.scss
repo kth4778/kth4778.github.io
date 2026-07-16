@@ -1,6 +1,9 @@
 ---
 ---
 
+// import 순서 의존 — 재정렬 금지.
+// .post--toc(toc)가 .post(post)를, .tag-page가 .home__*(list)를
+// CSS 특정성이 아니라 선언 순서로 이긴다. 아래 순서가 바뀌면 레이아웃이 조용히 깨진다.
 @import "fonts";
 @import "tokens";
 @import "base";
