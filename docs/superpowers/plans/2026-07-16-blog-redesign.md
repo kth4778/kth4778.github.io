@@ -181,6 +181,10 @@ EOF
   --color-bg: #FFFFFF;
   --color-bg-soft: #F1F5F9;
 
+  // accent 배경 위에 얹는 전경색. accent가 다크모드에서 밝아지므로
+  // 전경을 흰색으로 고정하면 대비가 무너진다. 짝으로 함께 재정의한다.
+  --color-on-accent: #FFFFFF;
+
   --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", "D2Coding", Consolas, monospace;
 
@@ -676,9 +680,11 @@ Expected: FAIL 또는 `0`. `home` 레이아웃이 아직 없다.
 
 요약은 본문 앞부분을 자른다. front matter에 `description`이 없으므로 이 방식이 유일하다.
 
+썸네일 링크에 `aria-hidden="true" tabindex="-1"`을 준다. 제목 링크와 목적지가 같아서, 그냥 두면 스크린리더·키보드 사용자가 같은 링크를 26번 연달아 두 번씩 만난다. 시각적 클릭은 그대로 동작한다.
+
 ```html
 <article class="list-item">
-  <a class="list-item__thumb thumb" href="{{ include.post.url | relative_url }}">
+  <a class="list-item__thumb thumb" href="{{ include.post.url | relative_url }}" aria-hidden="true" tabindex="-1">
     {% if include.post.image.path %}
       <img src="{{ include.post.image.path | relative_url }}" alt="{{ include.post.image.alt | default: include.post.title }}" loading="lazy">
     {% else %}
@@ -884,7 +890,7 @@ layout: default
 }
 .tag-pill:hover {
   background: var(--color-accent);
-  color: #fff;
+  color: var(--color-on-accent);
   text-decoration: none;
 }
 
@@ -1383,8 +1389,15 @@ EOF
   --color-border: #1F2D3F;
   --color-bg: #0D1520;
   --color-bg-soft: #16202E;
+
+  // accent가 밝아졌으므로 전경을 어둡게 뒤집는다.
+  // #5B9BD5 위 #0D1520 = 약 6.5:1 (AA 통과).
+  // 흰색을 유지하면 2.96:1로 떨어져 AA는 물론 3:1도 미달한다.
+  --color-on-accent: #0D1520;
 }
 ```
+
+`--color-on-accent`를 빠뜨리면 라이트의 `#FFFFFF`가 그대로 상속돼 대비가 무너진다. accent를 바꿀 때는 항상 짝으로 함께 바꾼다.
 
 - [ ] **Step 2: 토글 버튼을 `_includes/header.html` 네비에 추가**
 
