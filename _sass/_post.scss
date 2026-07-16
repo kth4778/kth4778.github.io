@@ -1,0 +1,33 @@
+.post { max-width: 760px; padding-top: 48px; padding-bottom: 80px; }
+
+.post__cat { margin: 0; font-size: 13px; font-weight: 700; color: var(--color-accent); }
+.post__title { margin: 8px 0 0; font-size: 36px; font-weight: 800; line-height: 1.35; color: var(--color-navy); }
+.post__meta { margin: 12px 0 0; font-size: 13px; color: var(--color-text-sub); }
+
+.post__body {
+  margin-top: 40px;
+
+  h1, h2 { margin: 56px 0 16px; font-size: 26px; font-weight: 800; line-height: 1.4; color: var(--color-navy); }
+  h3 { margin: 40px 0 12px; font-size: 20px; font-weight: 700; }
+  p { margin: 0 0 20px; }
+  img { border-radius: var(--radius-card); }
+
+  blockquote {
+    margin: 24px 0;
+    padding: 4px 20px;
+    border-left: 3px solid var(--color-accent);
+    color: var(--color-text-sub);
+  }
+
+  // kramdown은 표를 래퍼 없이 생성하므로 table 자체를 스크롤 컨테이너로 만든다.
+  table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--color-border); text-align: left; }
+  th { background: var(--color-bg-soft); font-weight: 700; }
+}
+
+.post__tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 48px 0 0; padding: 32px 0 0; border-top: 1px solid var(--color-border); }
+
+@media (max-width: 900px) {
+  .post__title { font-size: 26px; }
+  .post__body h1, .post__body h2 { font-size: 21px; }
+}

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<article class="post wrap">
+  <header class="post__header">
+    <p class="post__cat">{{ page.categories | join: " › " }}</p>
+    <h1 class="post__title">{{ page.title }}</h1>
+    <p class="post__meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y. %-m. %-d." }}</time>
+    </p>
+  </header>
+
+  <div class="post__body">
+    {{ content }}
+  </div>
+
+  <footer class="post__footer">
+    <ul class="post__tags">
+      {% for tag in page.tags %}
+        <li><a class="tag-pill" href="{{ '/tags/' | append: tag | slugify | append: '/' | relative_url }}">{{ tag }}</a></li>
+      {% endfor %}
+    </ul>
+  </footer>
+</article>
