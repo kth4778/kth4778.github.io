@@ -4,7 +4,7 @@
     {% assign tags = site.tags | sort %}
     {% for tag in tags %}
       <li{% if forloop.index > 12 %} class="is-hidden"{% endif %}>
-        <a class="tag-pill" href="{{ '/tags/' | append: tag[0] | slugify | append: '/' | relative_url }}">{{ tag[0] }}</a>
+        <a class="tag-pill" href="{{ tag[0] | slugify | prepend: '/tags/' | append: '/' | relative_url }}">{{ tag[0] }}</a>
       </li>
     {% endfor %}
   </ul>
