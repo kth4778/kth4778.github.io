@@ -22,3 +22,10 @@ code, pre { font-family: var(--font-mono); }
   margin: 0 auto;
   padding: 0 24px;
 }
+
+.section-label {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-sub);
+}
