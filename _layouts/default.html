@@ -10,6 +10,13 @@
   {% seo %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="icon" href="{{ '/assets/img/favicons/favicon.ico' | relative_url }}">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
 </head>
 <body>
   {% include header.html %}
@@ -17,5 +24,13 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  <script>
+    document.querySelector('[data-theme-toggle]')?.addEventListener('click', function () {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
 </body>
 </html>

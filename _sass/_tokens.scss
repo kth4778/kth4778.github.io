@@ -17,3 +17,18 @@
   --gap-card: 24px;
   --radius-card: 8px;
 }
+
+[data-theme="dark"] {
+  --color-navy: #0A1728;
+  --color-accent: #5B9BD5;
+  --color-text: #E6EDF3;
+  --color-text-sub: #8B9BB0;
+  --color-border: #1F2D3F;
+  --color-bg: #0D1520;
+  --color-bg-soft: #16202E;
+
+  // accent가 밝아졌으므로 전경을 어둡게 뒤집는다.
+  // #5B9BD5 위 #0D1520 = 약 6.5:1 (AA 통과).
+  // 흰색을 유지하면 2.96:1로 떨어져 AA는 물론 3:1도 미달한다.
+  --color-on-accent: #0D1520;
+}
