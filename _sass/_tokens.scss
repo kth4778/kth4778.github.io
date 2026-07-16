@@ -6,6 +6,9 @@
   --color-border: #E8EDF3;
   --color-bg: #FFFFFF;
   --color-bg-soft: #F1F5F9;
+  // accent 배경 위에 얹는 전경색. accent가 다크모드에서 밝아지므로
+  // 전경을 흰색으로 고정하면 대비가 무너진다. 짝으로 함께 재정의한다.
+  --color-on-accent: #FFFFFF;
 
   --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "JetBrains Mono", "D2Coding", Consolas, monospace;
