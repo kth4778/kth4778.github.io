@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="wrap tag-page">
+  <header class="tag-page__header">
+    <p class="section-label">Tag</p>
+    <h1 class="tag-page__title">{{ page.title }}</h1>
+    <p class="tag-page__count">{{ page.posts | size }}편</p>
+  </header>
+
+  <div class="home__main">
+    <section class="home__list">
+      {% for post in page.posts %}
+        {% include list-item.html post=post %}
+      {% endfor %}
+    </section>
+    {% include tag-sidebar.html %}
+  </div>
+</div>
