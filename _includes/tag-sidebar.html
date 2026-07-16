@@ -1,0 +1,23 @@
+<aside class="tag-sidebar">
+  <h2 class="tag-sidebar__title">Tag</h2>
+  <ul class="tag-sidebar__list" data-tag-list>
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+      <li{% if forloop.index > 12 %} class="is-hidden"{% endif %}>
+        <a class="tag-pill" href="{{ '/tags/' | append: tag[0] | slugify | append: '/' | relative_url }}">{{ tag[0] }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% if tags.size > 12 %}
+    <button class="tag-sidebar__more" type="button" data-tag-more>태그 더보기 ↓</button>
+  {% endif %}
+</aside>
+
+<script>
+  document.querySelector('[data-tag-more]')?.addEventListener('click', function () {
+    document.querySelectorAll('[data-tag-list] .is-hidden').forEach(function (el) {
+      el.classList.remove('is-hidden');
+    });
+    this.remove();
+  });
+</script>
