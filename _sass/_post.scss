@@ -20,8 +20,10 @@
   }
 
   // kramdown은 표를 래퍼 없이 생성하므로 table 자체를 스크롤 컨테이너로 만든다.
-  table { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
-  th, td { padding: 10px 12px; border-bottom: 1px solid var(--color-border); text-align: left; }
+  // Rouge(line_numbers: true)가 코드블록을 table.rouge-table로 생성하므로 제외한다.
+  table:not(.rouge-table) { display: block; width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-collapse: collapse; margin: 24px 0; font-size: 15px; }
+  // th/td도 rouge-table 하위 셀(td.rouge-gutter, td.rouge-code)엔 적용되면 안 된다.
+  table:not(.rouge-table) th, table:not(.rouge-table) td { padding: 10px 12px; border-bottom: 1px solid var(--color-border); text-align: left; }
   th { background: var(--color-bg-soft); font-weight: 700; }
 }
 
