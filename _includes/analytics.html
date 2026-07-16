@@ -1,0 +1,16 @@
+{% if jekyll.environment == 'production' %}
+  {% if site.analytics.google.id %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.analytics.google.id }}');
+  </script>
+  {% endif %}
+
+  {% if site.pageviews.provider == 'goatcounter' and site.analytics.goatcounter.id %}
+  <script data-goatcounter="https://{{ site.analytics.goatcounter.id }}.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  {% endif %}
+{% endif %}
