@@ -945,7 +945,11 @@ Expected: 빌드 통과, grep 결과 `26`
 grep -c "thumb__fallback" _site/index.html
 ```
 
-Expected: `4` — 이미지 없는 2편(`github-blog-setup`, `soma17-dev-log`)이 각각 피처드 카드와 리스트에 중복 노출될 수 있으므로 2~4 사이면 정상. 정확한 수는 최신 3편 구성에 따라 달라진다. 0이면 폴백 로직이 동작하지 않는 것이므로 실패.
+Expected: `2`
+
+근거: `image`가 없는 포스트는 `2026-05-25-github-blog-setup`과 `2026-06-03-soma17-dev-log` 두 편뿐이다. 피처드 3열은 최신 3편(`2026-07-16`, `2026-07-15`, `2026-07-14`)이라 폴백이 없고, 전체 리스트 26편에서 2개가 나온다.
+
+`0`이면 폴백 분기가 동작하지 않는 것이고, `2`보다 크면 `image.path`가 있는데도 폴백으로 빠지는 포스트가 있다는 뜻이다. 둘 다 실패로 간주한다.
 
 - [ ] **Step 11: 커밋**
 
@@ -974,8 +978,10 @@ EOF
 
 - [ ] **Step 1: 검증부터 실행해 실패 확인**
 
+Jekyll의 `:title`은 front matter의 제목이 아니라 **파일명 슬러그**다. `2026-07-16-ec2-sizing-purchase-options.md` → `/posts/ec2-sizing-purchase-options/`.
+
 ```bash
-bundle exec jekyll build && test -f _site/posts/새벽에-스팟-인스턴스가-꺼지면-어떡하나-걱정했다-—-EC2-사이징부터-구매옵션까지/index.html && echo FOUND || echo MISSING
+bundle exec jekyll build && test -f _site/posts/ec2-sizing-purchase-options/index.html && echo FOUND || echo MISSING
 ```
 
 Expected: `MISSING` 또는 빌드 경고. `post` 레이아웃이 없다.
@@ -1125,13 +1131,18 @@ ls _site/posts/ | wc -l
 
 Expected: 빌드 통과, `26`
 
-- [ ] **Step 6: URL 불변 회귀 검사**
+- [ ] **Step 6: URL 불변 회귀 검사 — 기준선과 대조**
+
+Task 1 실행 전 `_site`에서 뜬 기준선이 `.superpowers/sdd/baseline-post-urls.txt`에 있다 (26줄, 파일명 슬러그). 실제로 대조한다.
 
 ```bash
-ls _site/posts/ | head -5
+ls _site/posts/ | sort > /tmp/now-post-urls.txt
+diff .superpowers/sdd/baseline-post-urls.txt /tmp/now-post-urls.txt && echo "URL 불변 OK" || echo "URL 변경됨 — 중단"
 ```
 
-Expected: 포스트 제목 기반 한글 디렉터리명. Task 1 이전과 동일해야 한다. 기존 URL이 `/posts/:title/`이므로 형식이 바뀌었다면 즉시 중단하고 `_config.yml`의 permalink 설정을 확인할 것.
+Expected: `URL 불변 OK`. diff 출력이 비어야 한다.
+
+차이가 나면 즉시 중단하고 `_config.yml`의 `defaults` → posts → `permalink: /posts/:title/`가 남아 있는지 확인할 것. 이 검사가 실패하면 기존 26편의 외부 링크·SEO·giscus 댓글 스레드가 전부 끊긴다.
 
 - [ ] **Step 7: 커밋**
 
@@ -1817,24 +1828,36 @@ Expected: 통과. 깨진 내부 링크·이미지 0건.
 
 - [ ] **Step 2: 스펙 11장 회귀 검사표 전항목 실행**
 
+기준선은 Task 1 실행 전에 떠두었다 (`.superpowers/sdd/baseline-post-urls.txt` 26줄, `.superpowers/sdd/baseline-tag-urls.txt` 187줄).
+
 ```bash
-# 26편 URL 불변
-ls _site/posts/ | wc -l                                    # 26
+# 26편 URL 불변 — 기준선과 완전 일치해야 함
+ls _site/posts/ | sort > /tmp/final-post-urls.txt
+diff .superpowers/sdd/baseline-post-urls.txt /tmp/final-post-urls.txt && echo "POST URL OK"
+
+# 태그 URL 불변
+ls _site/tags/ | sort > /tmp/final-tag-urls.txt
+diff .superpowers/sdd/baseline-tag-urls.txt /tmp/final-tag-urls.txt && echo "TAG URL OK"
+
 # 네이버 인증 메타
-grep -rc "3acf5e196b4f28c3006c9421b91b997f79ef39aa" _site/index.html   # 1
+grep -c "3acf5e196b4f28c3006c9421b91b997f79ef39aa" _site/index.html   # 1
+
 # GA
 grep -c "G-VGD2N6XR7K" _site/index.html                    # 1 이상
+
 # GoatCounter
 grep -c "goatcounter" _site/index.html                     # 1 이상
+
 # giscus (전 포스트)
 grep -lc "giscus.app" _site/posts/*/index.html | wc -l      # 26
-# 태그 URL
-ls _site/tags/ | head -3                                   # /tags/:name/ 형식
-# 사이트맵·RSS
-test -f _site/sitemap.xml && echo OK
+
+# 사이트맵
+test -f _site/sitemap.xml && echo "SITEMAP OK"
 ```
 
 각 명령의 기대값이 주석에 있다. 하나라도 어긋나면 해당 Task로 돌아간다.
+
+태그 기준선 187개가 줄어들면 `tag-sidebar.html`의 `slugify` 처리나 `jekyll-archives` 설정이 기존과 달라진 것이다.
 
 - [ ] **Step 3: 로컬 서버 띄우고 브라우저 검증**
 
