@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post wrap">
+<article class="post wrap{% if page.toc %} post--toc{% endif %}">
   <header class="post__header">
     <p class="post__cat">{{ page.categories | join: " › " }}</p>
     <h1 class="post__title">{{ page.title }}</h1>
@@ -14,6 +14,7 @@ layout: default
   <div class="post__body">
     {{ content }}
   </div>
+  {% if page.toc %}{% include toc.html %}{% endif %}
 
   <footer class="post__footer">
     <ul class="post__tags">
