@@ -1,0 +1,61 @@
+<div class="search" data-search hidden>
+  <div class="search__panel">
+    <input class="search__input" type="search" placeholder="검색어를 입력하세요" data-search-input aria-label="검색">
+    <ul class="search__results" data-search-results></ul>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var box = document.querySelector('[data-search]');
+    var input = document.querySelector('[data-search-input]');
+    var results = document.querySelector('[data-search-results]');
+    var toggle = document.querySelector('[data-search-toggle]');
+    var index = null;
+
+    if (!box || !toggle) return;
+
+    function open() {
+      box.hidden = false;
+      input.focus();
+      if (!index) {
+        fetch('{{ "/search.json" | relative_url }}')
+          .then(function (r) { return r.json(); })
+          .then(function (data) { index = data; });
+      }
+    }
+
+    function close() { box.hidden = true; input.value = ''; results.innerHTML = ''; }
+
+    toggle.addEventListener('click', open);
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+
+    input.addEventListener('input', function () {
+      var q = this.value.trim().toLowerCase();
+      results.innerHTML = '';
+      if (!index || q.length < 2) return;
+
+      var hits = index.filter(function (p) {
+        return (p.title + ' ' + p.tags + ' ' + p.categories + ' ' + p.body).toLowerCase().indexOf(q) !== -1;
+      }).slice(0, 8);
+
+      if (hits.length === 0) {
+        results.innerHTML = '<li class="search__empty">결과가 없습니다</li>';
+        return;
+      }
+
+      hits.forEach(function (p) {
+        var li = document.createElement('li');
+        li.className = 'search__hit';
+        var a = document.createElement('a');
+        a.href = p.url;
+        a.innerHTML = '<strong></strong><span></span>';
+        a.querySelector('strong').textContent = p.title;
+        a.querySelector('span').textContent = p.categories + ' · ' + p.date;
+        li.appendChild(a);
+        results.appendChild(li);
+      });
+    });
+  })();
+</script>

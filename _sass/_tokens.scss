@@ -1,0 +1,34 @@
+:root {
+  --color-navy: #0B1F3A;
+  --color-accent: #2E6FBF;
+  --color-text: #1A2635;
+  --color-text-sub: #5A6B82;
+  --color-border: #E8EDF3;
+  --color-bg: #FFFFFF;
+  --color-bg-soft: #F1F5F9;
+  // accent 배경 위에 얹는 전경색. accent가 다크모드에서 밝아지므로
+  // 전경을 흰색으로 고정하면 대비가 무너진다. 짝으로 함께 재정의한다.
+  --color-on-accent: #FFFFFF;
+
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "D2Coding", Consolas, monospace;
+
+  --maxw-page: 1200px;
+  --gap-card: 24px;
+  --radius-card: 8px;
+}
+
+[data-theme="dark"] {
+  --color-navy: #0A1728;
+  --color-accent: #5B9BD5;
+  --color-text: #E6EDF3;
+  --color-text-sub: #8B9BB0;
+  --color-border: #1F2D3F;
+  --color-bg: #0D1520;
+  --color-bg-soft: #16202E;
+
+  // accent가 밝아졌으므로 전경을 어둡게 뒤집는다.
+  // #5B9BD5 위 #0D1520 = 약 6.5:1 (AA 통과).
+  // 흰색을 유지하면 2.96:1로 떨어져 AA는 물론 3:1도 미달한다.
+  --color-on-accent: #0D1520;
+}

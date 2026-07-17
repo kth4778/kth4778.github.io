@@ -1,0 +1,21 @@
+.tag-page { padding-top: 48px; padding-bottom: 80px; }
+
+.tag-page__header { margin-bottom: 40px; }
+
+.tag-page__title {
+  margin: 8px 0 0;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--color-navy);
+}
+
+.tag-page__count {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+@media (max-width: 900px) {
+  .tag-page__title { font-size: 24px; }
+}

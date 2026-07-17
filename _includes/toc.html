@@ -1,0 +1,25 @@
+<nav class="toc" data-toc aria-label="목차">
+  <p class="toc__title">목차</p>
+  <ul class="toc__list" data-toc-list></ul>
+</nav>
+
+<script>
+  (function () {
+    var body = document.querySelector('.post__body');
+    var list = document.querySelector('[data-toc-list]');
+    if (!body || !list) return;
+
+    var heads = body.querySelectorAll('h1[id], h2[id], h3[id]');
+    if (heads.length === 0) { document.querySelector('[data-toc]').remove(); return; }
+
+    heads.forEach(function (h) {
+      var li = document.createElement('li');
+      li.className = 'toc__item toc__item--' + h.tagName.toLowerCase();
+      var a = document.createElement('a');
+      a.href = '#' + h.id;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      list.appendChild(li);
+    });
+  })();
+</script>

@@ -1,0 +1,36 @@
+.post__body {
+  code {
+    padding: 2px 6px;
+    background: var(--color-bg-soft);
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  pre code { padding: 0; background: none; }
+
+  .highlight {
+    margin: 24px 0;
+    border-radius: var(--radius-card);
+    overflow-x: auto;
+    background: var(--color-navy);
+
+    pre { margin: 0; padding: 20px; }
+    code { color: #E6EDF3; font-size: 14px; line-height: 1.7; }
+  }
+
+  .highlight .lineno { color: rgba(255,255,255,.3); padding-right: 16px; user-select: none; }
+}
+
+.highlight {
+  .c, .c1, .cm, .cs { color: #7D8FA3; font-style: italic; }  // 주석
+  .k, .kd, .kn, .kp, .kr, .kt { color: #FF7B72; }            // 키워드
+  .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx { color: #A5D6FF; }  // 문자열
+  .n, .na, .nb, .nc, .nf, .nn, .nt, .nv { color: #E6EDF3; }  // 이름
+  .nf, .nc { color: #D2A8FF; }                               // 함수·클래스명
+  .m, .mi, .mf, .mh, .mo { color: #79C0FF; }                 // 숫자
+  .o, .ow { color: #FF7B72; }                                // 연산자
+  .p { color: #E6EDF3; }                                     // 구두점
+  .err { color: #FFA198; }                                   // 에러
+  .gd { color: #FFA198; background: rgba(248,81,73,.15); }   // diff 삭제
+  .gi { color: #7EE787; background: rgba(63,185,80,.15); }   // diff 추가
+}
