@@ -2,7 +2,7 @@
 title: "쇼핑몰 테이블을 직접 설계해보니 — FK 에러 코드가 더 이상 안 무섭다"
 date: 2026-07-06 22:30:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [mysql, sql, ddl, dml, erd, foreign-key, decimal, auto-increment, transaction, rollback, constraint]
+tags: [mysql, sql, erd, transaction]
 image:
   path: /assets/img/posts/mysql-ddl-dml-schema-design-constraints/thumbnail.webp
   alt: 외래 키 제약 위반으로 ERROR 1452가 출력된 MySQL 콘솔 화면

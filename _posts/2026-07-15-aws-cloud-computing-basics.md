@@ -2,7 +2,7 @@
 title: "서버를 사는 대신 빌려 쓴다는 게 이렇게 큰 의미였다 — AWS 클라우드 컴퓨팅 기초"
 date: 2026-07-15 10:00:00 +0900
 categories: [백엔드, 클라우드·네트워크]
-tags: [aws, cloud-computing, iaas, paas, saas, region, availability-zone, edge-location, multi-tenancy, capex, opex]
+tags: [aws, cloud-computing]
 image:
   path: /assets/img/posts/aws-cloud-computing-basics/thumbnail.webp
   alt: 서버를 사는 방식과 빌리는 방식을 CAPEX와 OPEX로 나눠 비교한 화이트보드

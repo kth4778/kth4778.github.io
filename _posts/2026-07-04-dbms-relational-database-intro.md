@@ -2,7 +2,7 @@
 title: "엑셀로 회원 관리하다가 DBMS를 제대로 공부하기 시작한 이유"
 date: 2026-07-04 21:10:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [database, dbms, mysql, nosql, relational-database, pk, fk, sql, client-server, normalization]
+tags: [database, mysql, sql]
 image:
   path: /assets/img/posts/dbms-relational-database-intro/thumbnail.webp
   alt: 엑셀 표의 중복 값을 묶고 두 테이블로 분리해 FK로 연결한 연필 스케치

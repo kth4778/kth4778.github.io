@@ -2,7 +2,7 @@
 title: "당근 기술 블로그 — 처음 살펴본 서킷 브레이커와 SLA"
 date: 2026-05-28 00:00:00 +0900
 categories: [백엔드, 시스템 설계]
-tags: [circuit-breaker, sla, slo, sli, profiling, microservice]
+tags: [circuit-breaker, slo, microservice]
 image:
   path: /assets/img/posts/karrot-feed-stability/thumbnail.webp
   alt: 서킷 브레이커 아티클을 인쇄해 형광펜을 긋고 여백에 상태 전이도를 그린 종이

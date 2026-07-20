@@ -2,7 +2,7 @@
 title: "할인 없는 상품만 가격이 사라졌다 — SQL 데이터 가공 정리"
 date: 2026-07-10 22:05:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [mysql, sql, concat, concat-ws, ifnull, coalesce, null, char-length, date-format, json-extract, arithmetic]
+tags: [mysql, sql]
 image:
   path: /assets/img/posts/mysql-arithmetic-string-null-functions/thumbnail.webp
   alt: NULL이 섞인 뺄셈 결과가 NULL이 되고 IFNULL로 값을 되살리는 과정을 연필로 적은 메모

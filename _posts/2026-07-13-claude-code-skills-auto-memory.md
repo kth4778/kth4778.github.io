@@ -2,7 +2,7 @@
 title: "SKILL.md는 안 만들어도 됐다 — Claude Code 커맨드와 자동 기억 세팅기"
 date: 2026-07-13 21:00:00 +0900
 categories: [AI, Claude Code]
-tags: [claude-code, skills, slash-command, claude-md, auto-memory, memory-system, workflow, dotclaude]
+tags: [claude-code, ai-tools, workflow]
 image:
   path: /assets/img/posts/claude-code-skills-auto-memory/thumbnail.webp
   alt: .claude/commands 폴더의 커맨드 파일 구조를 보여주는 에디터 탐색기 화면

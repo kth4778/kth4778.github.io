@@ -2,7 +2,7 @@
 title: "팩토리 패턴 + 전략 패턴 — 만드는 책임과 동작하는 책임을 나누다"
 date: 2026-06-01 00:00:00 +0900
 categories: [책 Log, 면접을 위한 CS 전공지식 노트, 팩토리·전략 패턴]
-tags: [design-pattern, factory-pattern, strategy-pattern, java, spring, cs]
+tags: [design-pattern, java, spring]
 image:
   path: /assets/img/posts/factory-strategy-pattern/thumbnail.webp
   alt: if-else 분기 코드를 감싸고 여백에 전략 패턴 구조를 그린 책 페이지

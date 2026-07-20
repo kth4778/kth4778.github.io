@@ -2,3 +2,19 @@
   .thumb img { filter: brightness(.88); }
   .post__body img { filter: brightness(.9); }
 }
+
+// 토글 클릭 순간에만 색상 트랜지션을 건다(JS가 450ms 뒤 클래스 제거).
+// 항상 걸어두면 호버 등 무관한 색 변화까지 느려진다.
+// 헤더 아이콘의 transform 전환은 더 높은 특정성이라 영향받지 않는다.
+.theme-switching *,
+.theme-switching *::before,
+.theme-switching *::after {
+  transition: background-color .4s ease, color .4s ease, border-color .4s ease,
+    fill .4s ease, stroke .4s ease, filter .4s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-switching *,
+  .theme-switching *::before,
+  .theme-switching *::after { transition: none; }
+}

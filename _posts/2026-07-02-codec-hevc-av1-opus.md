@@ -2,7 +2,7 @@
 title: "YouTube는 왜 AV1을 골랐나 — 코덱 선택의 트레이드오프"
 date: 2026-07-02 09:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [codec, hevc, h265, av1, vp9, opus, aac, ffmpeg, streaming, ctu, superblock, film-grain, webrtc]
+tags: [streaming, codec, hevc, av1]
 image:
   path: /assets/img/posts/codec-hevc-av1-opus/thumbnail.webp
   alt: H.265의 라이선스 비용과 AV1의 로열티 프리를 저울에 올려 비교한 화이트보드

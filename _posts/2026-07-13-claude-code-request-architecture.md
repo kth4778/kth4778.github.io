@@ -2,7 +2,7 @@
 title: "프롬프트 대신 계약서를 쓰기 시작했다 — Claude Code 작업 계약·좁은 수정·검증 3종 세트"
 date: 2026-07-13 23:30:00 +0900
 categories: [AI, Claude Code]
-tags: [claude-code, work-contract, prompt-engineering, verification, code-review, workflow, git-diff, regression-testing]
+tags: [claude-code, ai-tools, workflow]
 image:
   path: /assets/img/posts/claude-code-request-architecture/thumbnail.webp
   alt: 요청에 담을 다섯 항목을 리갈패드에 번호 붙여 적은 손글씨 메모

@@ -2,7 +2,7 @@
 title: "내가 잠든 사이 Claude가 알아서 일하게 만들기 — Hooks·Sub-agent·Plugin 자동화 3종 세트"
 date: 2026-07-14 22:10:00 +0900
 categories: [AI, Claude Code]
-tags: [claude-code, hooks, sub-agent, plugins, marketplace, automation, workflow, context-window, settings-json]
+tags: [claude-code, ai-tools, automation]
 image:
   path: /assets/img/posts/claude-code-hooks-subagent-plugins/thumbnail.webp
   alt: PreToolUse 훅 설정이 열린 에디터 화면과 실행 전에 가로채야 한다는 메모

@@ -44,6 +44,33 @@
 .site-header__search:hover,
 .site-header__theme:hover { color: var(--color-accent); }
 
+// 해·달 아이콘 두 장을 겹쳐두고 테마에 따라 회전+페이드로 교차 전환
+.site-header__theme {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.site-header__theme .theme-icon {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  transition: opacity .4s ease, transform .5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.site-header__theme .theme-icon--moon { opacity: 1; transform: rotate(0deg) scale(1); }
+.site-header__theme .theme-icon--sun  { opacity: 0; transform: rotate(90deg) scale(.5); }
+
+[data-theme="dark"] .site-header__theme {
+  .theme-icon--moon { opacity: 0; transform: rotate(-90deg) scale(.5); }
+  .theme-icon--sun  { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header__theme .theme-icon { transition: none; }
+}
+
 @media (max-width: 600px) {
   .site-header__nav { gap: 14px; }
   .site-header__logo { font-size: 14px; }

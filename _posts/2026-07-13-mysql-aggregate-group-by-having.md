@@ -2,7 +2,7 @@
 title: "COUNT(전화번호)로 회원 수를 셌다가 13명이 사라진 이유 — SQL 집계와 그룹핑 정리"
 date: 2026-07-13 23:40:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [mysql, sql, count, sum, avg, group-by, having, aggregate-function, distinct, sql-execution-order, only-full-group-by]
+tags: [mysql, sql, group-by]
 image:
   path: /assets/img/posts/mysql-aggregate-group-by-having/thumbnail.webp
   alt: 전화번호가 빈 행을 표시하고 COUNT(*)와 COUNT(phone) 결과 차이를 적은 모눈종이 메모

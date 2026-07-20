@@ -2,7 +2,7 @@
 title: "화질을 숫자로 — VMAF와 FFmpeg 실전 트랜스코딩"
 date: 2026-07-03 09:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [codec, vmaf, ssim, psnr, ffmpeg, nvenc, qsv, hls, dash, abr, transcoding, streaming]
+tags: [streaming, codec, vmaf, ffmpeg]
 image:
   path: /assets/img/posts/codec-vmaf-ffmpeg-practical/thumbnail.webp
   alt: ffmpeg libvmaf로 CRF 20과 23의 VMAF 점수를 측정한 터미널 화면
