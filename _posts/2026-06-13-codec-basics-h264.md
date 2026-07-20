@@ -2,7 +2,7 @@
 title: "671 GB짜리 영상이 4 GB가 되는 이유 — 코덱 기초부터 H.264까지"
 date: 2026-06-13 09:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [codec, h264, yuv, chroma-subsampling, dct, gop, iframe, pframe, bframe, ffmpeg, streaming, macroblock, cabac, crf, preset, profile]
+tags: [streaming, codec, h264, ffmpeg]
 image:
   path: /assets/img/posts/codec-basics-h264/thumbnail.webp
   alt: 무압축 영상 용량을 단계별로 계산해 671GB가 나오고 H.264로 4GB가 되는 과정을 적은 모눈종이

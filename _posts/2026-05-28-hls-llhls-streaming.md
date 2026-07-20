@@ -2,7 +2,7 @@
 title: "HLS부터 LLHLS까지 — 스트리밍 지연을 줄이는 방법 (이론)"
 date: 2026-05-28 00:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [hls, llhls, streaming, cdn, tcp, ffmpeg]
+tags: [streaming, hls, llhls]
 image:
   path: /assets/img/posts/hls-llhls-streaming/thumbnail.webp
   alt: 6초 세그먼트 3개로 18초가 되는 HLS 지연과 LLHLS의 500ms를 비교한 노트 필기

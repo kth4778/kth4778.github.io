@@ -2,7 +2,7 @@
 title: "WebRTC를 파고들었더니 — ICE, DTLS, SFU까지 화상통화 뒤에서 벌어지는 일"
 date: 2026-06-10 14:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [webrtc, ice, stun, turn, sdp, dtls, srtp, sfu, mcu, p2p, streaming, mediasoup]
+tags: [streaming, webrtc, sfu]
 image:
   path: /assets/img/posts/webrtc-internals/thumbnail.webp
   alt: P2P 연결 위에 물음표를 그리고 STUN·TURN·SFU를 배치한 화이트보드 낙서

@@ -2,7 +2,7 @@
 title: "싱글톤 패턴 — 왜 인스턴스는 딱 하나여야 할까"
 date: 2026-05-31 00:00:00 +0900
 categories: [책 Log, 면접을 위한 CS 전공지식 노트, 싱글톤 패턴]
-tags: [design-pattern, singleton, java, spring, cs]
+tags: [design-pattern, java, spring]
 image:
   path: /assets/img/posts/singleton-pattern/thumbnail.webp
   alt: 싱글톤 코드가 실린 책 페이지에 형광펜을 긋고 인스턴스는 하나뿐임을 여백에 메모한 모습

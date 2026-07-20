@@ -2,7 +2,7 @@
 title: "세션이 끝나면 Claude는 다 잊는다 — HANDOFF.md·Lessons.md·Plan Mode·TDD로 클로드 코드 완전 정복을 마치며"
 date: 2026-07-14 23:20:00 +0900
 categories: [AI, Claude Code]
-tags: [claude-code, handoff, lessons-learned, session-management, memory-promotion, plan-mode, tdd, workflow, claude-md]
+tags: [claude-code, ai-tools, workflow, tdd]
 image:
   path: /assets/img/posts/claude-code-handoff-lessons-planmode-tdd/thumbnail.webp
   alt: 덮어쓰는 HANDOFF.md와 쌓아가는 Lessons.md의 역할을 인덱스카드 두 장에 적어 비교한 모습

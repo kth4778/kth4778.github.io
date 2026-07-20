@@ -2,7 +2,7 @@
 title: "Claude Code를 챗봇으로 쓰고 있었다 — 작업 루프로 바꾸기"
 date: 2026-06-11 22:00:00 +0900
 categories: [AI, Claude Code]
-tags: [claude-code, workflow, ai-tools, claude, work-loop, claude-md]
+tags: [claude-code, ai-tools, workflow]
 image:
   path: /assets/img/posts/claude-code-work-loop/thumbnail.webp
   alt: 일회성 챗 방식과 계획·실행·검증이 순환하는 작업 루프를 비교한 화이트보드

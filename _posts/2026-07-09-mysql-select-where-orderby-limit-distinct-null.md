@@ -2,7 +2,7 @@
 title: "WHERE phone = NULL이 항상 0건이었던 이유 — SQL 조회와 정렬 정리"
 date: 2026-07-09 21:40:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [mysql, sql, select, where, order-by, limit, distinct, null, pagination, like, between, in]
+tags: [mysql, sql]
 image:
   path: /assets/img/posts/mysql-select-where-orderby-limit-distinct-null/thumbnail.webp
   alt: phone = NULL은 0건이고 IS NULL은 13건이 나오는 이유를 연필로 끄적인 스케치

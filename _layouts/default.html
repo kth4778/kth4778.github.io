@@ -26,12 +26,18 @@
   {% include footer.html %}
   {% include search.html %}
   <script>
-    document.querySelector('[data-theme-toggle]')?.addEventListener('click', function () {
-      var root = document.documentElement;
-      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
+    (function () {
+      var timer;
+      document.querySelector('[data-theme-toggle]')?.addEventListener('click', function () {
+        var root = document.documentElement;
+        root.classList.add('theme-switching');
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        clearTimeout(timer);
+        timer = setTimeout(function () { root.classList.remove('theme-switching'); }, 450);
+      });
+    })();
   </script>
   {% include analytics.html %}
 </body>

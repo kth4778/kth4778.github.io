@@ -2,7 +2,7 @@
 title: "RTMP의 시대가 끝나가고 있다 — WHIP·WHEP과 스트리밍 프로토콜 선택 기준"
 date: 2026-06-11 22:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [whip, whep, webrtc, rtmp, hls, llhls, dash, srt, streaming, obs, cloudflare, sfu, sdp, ietf]
+tags: [streaming, webrtc, rtmp, srt]
 image:
   path: /assets/img/posts/whip-whep-streaming-protocols-summary/thumbnail.webp
   alt: 프로토콜별 지연과 용도를 손으로 그린 표에서 WHIP/WHEP의 0.5초를 강조한 노트

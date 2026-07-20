@@ -2,7 +2,7 @@
 title: "MySQL 워크벤치 켜고 처음 SQL 쳐본 날 — WHERE 하나 빠뜨리면 회원 전체가 사라진다"
 date: 2026-07-06 20:40:00 +0900
 categories: [백엔드, 데이터베이스]
-tags: [mysql, sql, ddl, dml, crud, varchar, char, datetime, timestamp, constraint, primary-key, foreign-key, workbench]
+tags: [mysql, sql, ddl, constraint]
 image:
   path: /assets/img/posts/mysql-crud-sql-basics-constraints/thumbnail.webp
   alt: WHERE 없는 DELETE로 100행이 지워지고 WHERE를 붙이면 1행만 지워지는 MySQL 콘솔 화면

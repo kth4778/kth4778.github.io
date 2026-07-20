@@ -2,7 +2,7 @@
 title: "RTMP는 Flash가 죽어도 살아남았다 — 그리고 SRT가 필요한 순간"
 date: 2026-06-09 21:00:00 +0900
 categories: [백엔드, 스트리밍]
-tags: [rtmp, srt, streaming, hls, tcp, udp, obs, ffmpeg, arq, aes]
+tags: [streaming, rtmp, srt, ffmpeg]
 image:
   path: /assets/img/posts/rtmp-srt-streaming/thumbnail.webp
   alt: RTMP의 2초 지연과 SRT의 200ms를 화살표 길이로 비교한 줄노트 메모

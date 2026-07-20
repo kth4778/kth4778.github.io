@@ -2,7 +2,7 @@
 title: "새벽에 스팟 인스턴스가 꺼지면 어떡하나 걱정했다 — EC2 사이징부터 구매옵션까지"
 date: 2026-07-16 09:20:00 +0900
 categories: [백엔드, 클라우드·네트워크]
-tags: [aws, ec2, ebs, elb, auto-scaling-group, ami, spot-instance, reserved-instance, ec2-instance-store, efs, fsx]
+tags: [aws, ec2, cloud-computing]
 image:
   path: /assets/img/posts/ec2-sizing-purchase-options/thumbnail.webp
   alt: 온디맨드와 스팟 인스턴스의 가격 차이와 60초 종료 통보를 적은 포스트잇 세 장

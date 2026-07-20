@@ -1,0 +1,213 @@
+// About 페이지 — "Dev Log"라는 이름에 맞춘 터미널·로그 모티프.
+// 색·폰트·라운드는 전부 토큰 참조.
+
+.about {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 0 40px;
+}
+
+// ── 히어로 ──────────────────────────────
+
+.about__prompt {
+  margin: 0 0 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-sub);
+}
+.about__prompt span { color: var(--color-accent); }
+.about__prompt::after {
+  content: "▊";
+  margin-left: 6px;
+  color: var(--color-accent);
+  animation: about-blink 1.2s steps(2, start) infinite;
+}
+@keyframes about-blink {
+  to { visibility: hidden; }
+}
+
+.about__title {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 5vw, 42px);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -1px;
+}
+.about__title em {
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+.about__lead {
+  margin: 0 0 28px;
+  color: var(--color-text-sub);
+}
+
+.about__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.about__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.about__link:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.about__link svg { flex: none; }
+
+// ── 로그 스타일 섹션 제목 ───────────────
+
+.about__log {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 64px 0 20px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.about__log-level {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+.about__log::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+// ── 현재 프로젝트 카드 ──────────────────
+
+.about__card {
+  padding: 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-bg-soft);
+}
+.about__card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.about__card-title {
+  margin: 0;
+  font-size: 18px;
+}
+.about__status {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-accent);
+}
+.about__status::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+.about__card-desc {
+  margin: 8px 0 16px;
+  font-size: 15px;
+  color: var(--color-text-sub);
+}
+
+// ── 기술 칩 ─────────────────────────────
+
+.about__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.about__chips li {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: var(--color-bg-soft);
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--color-text-sub);
+}
+// bg-soft 카드 안에서는 칩 배경을 페이지 배경색으로 뒤집는다
+.about__card .about__chips li {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+// ── 기술 스택 목록 ──────────────────────
+
+.about__stack { margin: 0; }
+.about__stack-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.about__stack-row dt {
+  flex: none;
+  width: 130px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-sub);
+}
+.about__stack-row dd { margin: 0; }
+
+// ── 기록 주제 그리드 ────────────────────
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.about__topic {
+  padding: 18px 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+}
+.about__topic h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+}
+.about__topic p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-sub);
+}
+
+@media (max-width: 640px) {
+  .about { padding-top: 40px; }
+  .about__log { margin-top: 48px; }
+  .about__stack-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .about__stack-row dt { width: auto; }
+  .about__grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about__prompt::after { animation: none; }
+}
