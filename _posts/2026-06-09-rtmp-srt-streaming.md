@@ -4,8 +4,8 @@ date: 2026-06-09 21:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [rtmp, srt, streaming, hls, tcp, udp, obs, ffmpeg, arq, aes]
 image:
-  path: /assets/img/posts/rtmp-srt-streaming/streaming-pipeline.png
-  alt: "스트리밍 파이프라인"
+  path: /assets/img/posts/rtmp-srt-streaming/thumbnail.webp
+  alt: RTMP의 2초 지연과 SRT의 200ms를 화살표 길이로 비교한 줄노트 메모
 ---
 
 스트리밍 프로토콜을 공부하다 보니 묘한 게 있었다.

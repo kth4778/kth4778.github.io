@@ -4,8 +4,8 @@ date: 2026-07-13 23:40:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [mysql, sql, count, sum, avg, group-by, having, aggregate-function, distinct, sql-execution-order, only-full-group-by]
 image:
-  path: /assets/img/posts/mysql-aggregate-group-by-having/count-star-vs-count-column-null.png
-  alt: COUNT(*)와 COUNT(컬럼)은 NULL 처리 방식이 다르다
+  path: /assets/img/posts/mysql-aggregate-group-by-having/thumbnail.webp
+  alt: 전화번호가 빈 행을 표시하고 COUNT(*)와 COUNT(phone) 결과 차이를 적은 모눈종이 메모
 ---
 
 인프런 김영한님 실전 데이터베이스 입문 섹션 7을 정리한다. 섹션 6까지는 행 하나하나를 조회하고 가공하는 법을 배웠는데, 이번 섹션은 관점이 완전히 바뀌었다. 여러 행을 하나로, 또는 여러 그룹으로 요약하는 법이다. 집계 함수, GROUP BY, GROUP BY의 함정, HAVING, 그리고 마지막에 이 모든 걸 하나로 꿰어주는 SQL 실행 순서까지 여섯 꼭지였는데, 배우는 내내 "분명 아까 배운 규칙인데 왜 여기선 또 헷갈리지"를 반복했다. 헷갈렸던 지점 위주로 최대한 자세히 남겨본다.

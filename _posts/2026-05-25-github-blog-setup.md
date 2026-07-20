@@ -3,6 +3,9 @@ title: "GitHub 기술 블로그를 시작한 이유"
 date: 2026-05-25 23:00:00 +0900
 categories: [회고]
 tags: [github-blog, jekyll, chirpy]
+image:
+  path: /assets/img/posts/github-blog-setup/thumbnail.webp
+  alt: Velog와 GitHub Pages를 비교해 크라프트 노트에 손으로 적은 메모
 ---
 
 # 블로그를 시작하게 된 이유

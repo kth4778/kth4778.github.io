@@ -4,8 +4,8 @@ date: 2026-07-06 22:30:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [mysql, sql, ddl, dml, erd, foreign-key, decimal, auto-increment, transaction, rollback, constraint]
 image:
-  path: /assets/img/posts/mysql-ddl-dml-schema-design-constraints/customers-products-orders-erd-relation.png
-  alt: customers, products, orders 테이블 관계
+  path: /assets/img/posts/mysql-ddl-dml-schema-design-constraints/thumbnail.webp
+  alt: 외래 키 제약 위반으로 ERROR 1452가 출력된 MySQL 콘솔 화면
 ---
 
 인프런 김영한님 실전 데이터베이스 입문 섹션 4를 정리한다. 섹션 3까지는 members 테이블 하나로만 연습했는데, 이번 섹션에서는 진짜 쇼핑몰이 쓸 법한 테이블 여러 개를 직접 설계하고, 데이터를 넣고 고치고 지우는 실전 흐름을 배웠다. 일곱 꼭지나 되는 긴 섹션이라 정리하는 데도 시간이 꽤 걸렸다.

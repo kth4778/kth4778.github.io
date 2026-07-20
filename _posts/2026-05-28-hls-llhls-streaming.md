@@ -4,8 +4,8 @@ date: 2026-05-28 00:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [hls, llhls, streaming, cdn, tcp, ffmpeg]
 image:
-  path: /assets/img/posts/hls-llhls-streaming/hls-architecture.png
-  alt: "HLS 아키텍처"
+  path: /assets/img/posts/hls-llhls-streaming/thumbnail.webp
+  alt: 6초 세그먼트 3개로 18초가 되는 HLS 지연과 LLHLS의 500ms를 비교한 노트 필기
 ---
 
 영상 재생 정도면 그냥 라이브러리

@@ -4,8 +4,8 @@ date: 2026-07-13 21:00:00 +0900
 categories: [AI, Claude Code]
 tags: [claude-code, skills, slash-command, claude-md, auto-memory, memory-system, workflow, dotclaude]
 image:
-  path: /assets/img/posts/claude-code-skills-auto-memory/skill-command-file-structure.png
-  alt: .claude/commands 폴더와 슬래시 커맨드 파일 구조
+  path: /assets/img/posts/claude-code-skills-auto-memory/thumbnail.webp
+  alt: .claude/commands 폴더의 커맨드 파일 구조를 보여주는 에디터 탐색기 화면
 ---
 
 지난 포스트 마지막에 "SKILL.md, Hooks, Sub-agent는 아직 제대로 세팅 안 했다. 다음 포스트에서 이어서 쓸 예정이다"라고 써놓고 두 달 가까이 방치했다. 이번에 이 블로그 자동화 커맨드(`/teach`, `/new-post`, `/deploy`, `/status`)를 실제로 만들면서 그 SKILL.md를 드디어 손댔는데, 막상 해보니 예상과 다르게 흘러갔다.

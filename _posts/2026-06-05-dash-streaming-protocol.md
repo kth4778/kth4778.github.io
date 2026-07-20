@@ -4,8 +4,8 @@ date: 2026-06-05 10:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [dash, hls, llhls, streaming, mpd, abr, codec, youtube, vp9]
 image:
-  path: /assets/img/posts/dash-streaming-protocol/hls-vs-dash-comparison.png
-  alt: "HLS vs DASH 비교"
+  path: /assets/img/posts/dash-streaming-protocol/thumbnail.webp
+  alt: HLS의 단일 코덱과 DASH의 여러 코덱 조합을 화이트보드에 비교한 그림
 ---
 
 지난번에 HLS랑 LLHLS를 정리했는데, 쓰면서 계속 걸리는 게 있었다.

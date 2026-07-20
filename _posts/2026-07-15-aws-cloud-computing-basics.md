@@ -4,8 +4,8 @@ date: 2026-07-15 10:00:00 +0900
 categories: [백엔드, 클라우드·네트워크]
 tags: [aws, cloud-computing, iaas, paas, saas, region, availability-zone, edge-location, multi-tenancy, capex, opex]
 image:
-  path: /assets/img/posts/aws-cloud-computing-basics/deployment-models.png
-  alt: 클라우드 배포 모델 3종(Private, Public, Hybrid) 손그림 비교 다이어그램
+  path: /assets/img/posts/aws-cloud-computing-basics/thumbnail.webp
+  alt: 서버를 사는 방식과 빌리는 방식을 CAPEX와 OPEX로 나눠 비교한 화이트보드
 ---
 
 요즘 클라우드 관련 자료를 좀 챙겨보고 있다. 그동안 EC2, VPC 이런 단어는 들어봤어도 정확히 뭔지는 몰랐는데, 이번 기회에 제대로 정리해보려고 한다.

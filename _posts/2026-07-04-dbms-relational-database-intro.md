@@ -4,8 +4,8 @@ date: 2026-07-04 21:10:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [database, dbms, mysql, nosql, relational-database, pk, fk, sql, client-server, normalization]
 image:
-  path: /assets/img/posts/dbms-relational-database-intro/data-structured-data-information-flow.png
-  alt: 데이터에서 정보가 만들어지는 3단계 흐름
+  path: /assets/img/posts/dbms-relational-database-intro/thumbnail.webp
+  alt: 엑셀 표의 중복 값을 묶고 두 테이블로 분리해 FK로 연결한 연필 스케치
 ---
 
 인프런에서 김영한님 실전 데이터베이스 입문 강의를 듣기 시작했다. SW마에스트로 프로젝트 하면서 DB를 대충 쓰기만 하고 왜 이렇게 설계됐는지는 제대로 몰랐던 게 계속 걸렸다. `INSERT`, `SELECT` 정도는 손에 익었지만 누가 "근데 이건 왜 이렇게 동작해?"라고 물으면 제대로 답을 못 할 것 같았다.

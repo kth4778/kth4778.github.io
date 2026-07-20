@@ -4,8 +4,8 @@ date: 2026-07-09 21:40:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [mysql, sql, select, where, order-by, limit, distinct, null, pagination, like, between, in]
 image:
-  path: /assets/img/posts/mysql-select-where-orderby-limit-distinct-null/select-star-vs-columns-comparison.png
-  alt: SELECT * 와 특정 컬럼 조회 비교
+  path: /assets/img/posts/mysql-select-where-orderby-limit-distinct-null/thumbnail.webp
+  alt: phone = NULL은 0건이고 IS NULL은 13건이 나오는 이유를 연필로 끄적인 스케치
 ---
 
 인프런 김영한님 실전 데이터베이스 입문 섹션 5를 정리한다. 섹션 4까지는 테이블 설계하고 데이터 넣고 고치고 지우는 것까지 했는데, 이번엔 그렇게 채워 넣은 데이터를 실제로 꺼내보는 법을 배웠다. SELECT 하나만 배우고 끝날 줄 알았는데 WHERE, ORDER BY, LIMIT, DISTINCT까지 이어지더니 마지막엔 NULL 정렬 트릭까지 나와서, 소단원 일곱 개짜리 섹션이 생각보다 훨씬 길어졌다.

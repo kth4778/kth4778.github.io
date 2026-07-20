@@ -4,8 +4,8 @@ date: 2026-06-01 00:00:00 +0900
 categories: [책 Log, 면접을 위한 CS 전공지식 노트, 팩토리·전략 패턴]
 tags: [design-pattern, factory-pattern, strategy-pattern, java, spring, cs]
 image:
-  path: /assets/img/posts/factory-strategy-pattern/factory-pattern.png
-  alt: "팩토리 패턴 구조"
+  path: /assets/img/posts/factory-strategy-pattern/thumbnail.webp
+  alt: if-else 분기 코드를 감싸고 여백에 전략 패턴 구조를 그린 책 페이지
 ---
 
 싱글톤 패턴에 이어 팩토리 패턴과 전략 패턴을 공부했다. 이 두 패턴은

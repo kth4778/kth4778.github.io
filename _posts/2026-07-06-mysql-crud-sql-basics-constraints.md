@@ -4,8 +4,8 @@ date: 2026-07-06 20:40:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [mysql, sql, ddl, dml, crud, varchar, char, datetime, timestamp, constraint, primary-key, foreign-key, workbench]
 image:
-  path: /assets/img/posts/mysql-crud-sql-basics-constraints/sql-commands-create-use-table-flow.png
-  alt: CREATE부터 DROP까지 명령어 흐름
+  path: /assets/img/posts/mysql-crud-sql-basics-constraints/thumbnail.webp
+  alt: WHERE 없는 DELETE로 100행이 지워지고 WHERE를 붙이면 1행만 지워지는 MySQL 콘솔 화면
 ---
 
 인프런 김영한님 실전 데이터베이스 입문 섹션 3을 정리한다. 섹션 2는 개념만 보는 거였는데, 이번엔 진짜 워크벤치를 켜고 손으로 SQL을 쳐보는 첫 실습 섹션이었다. `CREATE DATABASE`부터 제약조건까지, 다섯 꼭지를 순서대로 정리한다.

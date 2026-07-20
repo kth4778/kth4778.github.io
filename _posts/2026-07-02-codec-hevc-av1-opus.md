@@ -4,8 +4,8 @@ date: 2026-07-02 09:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [codec, hevc, h265, av1, vp9, opus, aac, ffmpeg, streaming, ctu, superblock, film-grain, webrtc]
 image:
-  path: /assets/img/posts/codec-hevc-av1-opus/h264-vs-h265-ctu.png
-  alt: H.264 매크로블록과 H.265 CTU 구조 비교
+  path: /assets/img/posts/codec-hevc-av1-opus/thumbnail.webp
+  alt: H.265의 라이선스 비용과 AV1의 로열티 프리를 저울에 올려 비교한 화이트보드
 ---
 
 지난번 H.264 포스트 마지막에 "다음은 H.265와 AV1을 비교할 예정"이라고 써놨는데, 막상 파보니 생각보다 이야기가 복잡했다.

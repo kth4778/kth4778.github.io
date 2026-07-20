@@ -4,8 +4,8 @@ date: 2026-07-14 22:10:00 +0900
 categories: [AI, Claude Code]
 tags: [claude-code, hooks, sub-agent, plugins, marketplace, automation, workflow, context-window, settings-json]
 image:
-  path: /assets/img/posts/claude-code-hooks-subagent-plugins/hooks-vs-claudemd-guarantee-comparison.png
-  alt: CLAUDE.md 프롬프트 권장과 Hooks 확정 실행의 차이
+  path: /assets/img/posts/claude-code-hooks-subagent-plugins/thumbnail.webp
+  alt: PreToolUse 훅 설정이 열린 에디터 화면과 실행 전에 가로채야 한다는 메모
 ---
 
 지난 포스트 끝에 "다음은 파트3, Hooks랑 Sub-agent 차례다"라고 써놨었다. 파트2(요청 계약·좁은 수정·검증)까지는 "내가 어떻게 요청하느냐"를 다듬는 이야기였는데, 이번 파트는 관점이 아예 바뀐다. 매번 요청 안 해도 알아서 돌아가게 만드는 자동화 3종 세트, Hooks·Sub-agent·Plugin이다.

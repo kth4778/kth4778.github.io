@@ -4,8 +4,8 @@ date: 2026-07-14 23:20:00 +0900
 categories: [AI, Claude Code]
 tags: [claude-code, handoff, lessons-learned, session-management, memory-promotion, plan-mode, tdd, workflow, claude-md]
 image:
-  path: /assets/img/posts/claude-code-handoff-lessons-planmode-tdd/handoff-md-file-mockup.png
-  alt: HANDOFF.md 파일이 세션 시작과 종료 시점에 갱신되는 모습
+  path: /assets/img/posts/claude-code-handoff-lessons-planmode-tdd/thumbnail.webp
+  alt: 덮어쓰는 HANDOFF.md와 쌓아가는 Lessons.md의 역할을 인덱스카드 두 장에 적어 비교한 모습
 ---
 
 파트3(Hooks·Sub-agent·Plugin)까지 하고 나서 "이제 자동화는 끝났다" 싶었는데, 진짜 문제는 다른 데 있었다. 대화창을 닫고 다음날 다시 열면 어제 뭘 했는지 Claude가 하나도 기억을 못 했다. 이번 파트는 그 문제를 어떻게 풀었는지, 그리고 시리즈 전체를 마무리하면서 배운 마지막 조각들 얘기다.

@@ -4,8 +4,8 @@ date: 2026-07-16 09:20:00 +0900
 categories: [백엔드, 클라우드·네트워크]
 tags: [aws, ec2, ebs, elb, auto-scaling-group, ami, spot-instance, reserved-instance, ec2-instance-store, efs, fsx]
 image:
-  path: /assets/img/posts/ec2-sizing-purchase-options/ec2-family-diagram.png
-  alt: EC2와 EBS·ELB·ASG가 어떻게 묶여서 동작하는지 보여주는 다이어그램
+  path: /assets/img/posts/ec2-sizing-purchase-options/thumbnail.webp
+  alt: 온디맨드와 스팟 인스턴스의 가격 차이와 60초 종료 통보를 적은 포스트잇 세 장
 ---
 
 지난 포스트에서 리전이랑 가용영역, 엣지로케이션까지 배웠다. "서버를 어디에 둘 것인가"까지는 감이 잡혔는데, 정작 그 자리에 올라가는 서버 자체는 하나도 모르고 있었다.

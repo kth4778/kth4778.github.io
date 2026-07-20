@@ -4,8 +4,8 @@ date: 2026-07-03 09:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [codec, vmaf, ssim, psnr, ffmpeg, nvenc, qsv, hls, dash, abr, transcoding, streaming]
 image:
-  path: /assets/img/posts/codec-vmaf-ffmpeg-practical/psnr-ssim-vmaf-pipeline.png
-  alt: PSNR·SSIM·VMAF 화질 측정 파이프라인 비교
+  path: /assets/img/posts/codec-vmaf-ffmpeg-practical/thumbnail.webp
+  alt: ffmpeg libvmaf로 CRF 20과 23의 VMAF 점수를 측정한 터미널 화면
 ---
 
 코덱 시리즈를 쓰면서 계속 "CRF 23이면 화질이 괜찮다", "preset을 slow로 하면 더 좋다" 같은 말을 감으로 써왔다. 그런데 정작 "괜찮다"는 게 뭘 기준으로 한 말인지 스스로도 애매했다.

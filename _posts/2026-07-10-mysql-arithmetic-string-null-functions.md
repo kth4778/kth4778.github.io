@@ -4,8 +4,8 @@ date: 2026-07-10 22:05:00 +0900
 categories: [백엔드, 데이터베이스]
 tags: [mysql, sql, concat, concat-ws, ifnull, coalesce, null, char-length, date-format, json-extract, arithmetic]
 image:
-  path: /assets/img/posts/mysql-arithmetic-string-null-functions/arithmetic-null-propagation-comparison.png
-  alt: 산술 연산에서 NULL이 섞이면 결과 전체가 사라진다
+  path: /assets/img/posts/mysql-arithmetic-string-null-functions/thumbnail.webp
+  alt: NULL이 섞인 뺄셈 결과가 NULL이 되고 IFNULL로 값을 되살리는 과정을 연필로 적은 메모
 ---
 
 인프런 김영한님 실전 데이터베이스 입문 섹션 6을 정리한다. 섹션 5까지는 있는 데이터를 그대로 꺼내는 법(SELECT, WHERE, ORDER BY)을 배웠는데, 이번 섹션은 꺼내면서 그 자리에서 값을 가공하는 법이었다. 산술 연산, 문자열 함수, NULL 함수, 그리고 마지막에 SQL 표준 함수와 MySQL 방언 함수를 구분하는 법까지 네 꼭지였다.

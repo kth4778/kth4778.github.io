@@ -4,8 +4,8 @@ date: 2026-06-11 22:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [whip, whep, webrtc, rtmp, hls, llhls, dash, srt, streaming, obs, cloudflare, sfu, sdp, ietf]
 image:
-  path: /assets/img/posts/whip-whep-streaming-protocols-summary/rtmp-webrtc-problem.png
-  alt: RTMP는 표준이었고 WebRTC는 연결 방법이 없었다
+  path: /assets/img/posts/whip-whep-streaming-protocols-summary/thumbnail.webp
+  alt: 프로토콜별 지연과 용도를 손으로 그린 표에서 WHIP/WHEP의 0.5초를 강조한 노트
 ---
 
 스트리밍 프로토콜 시리즈를 마무리하면서 마지막 단계가 WHIP·WHEP이었다. HLS부터 시작해서 LLHLS, DASH, RTMP, SRT, WebRTC까지 쭉 달려왔다.

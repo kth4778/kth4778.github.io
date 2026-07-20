@@ -4,8 +4,8 @@ date: 2026-05-31 00:00:00 +0900
 categories: [책 Log, 면접을 위한 CS 전공지식 노트, 싱글톤 패턴]
 tags: [design-pattern, singleton, java, spring, cs]
 image:
-  path: /assets/img/posts/singleton-pattern/singleton-structure.png
-  alt: "싱글톤 패턴 구조"
+  path: /assets/img/posts/singleton-pattern/thumbnail.webp
+  alt: 싱글톤 코드가 실린 책 페이지에 형광펜을 긋고 인스턴스는 하나뿐임을 여백에 메모한 모습
 ---
 
 CS 전공지식 노트를 읽기 시작했다. 1장 첫 번째 주제가 싱글톤 패턴이었는데, 사실 이름은 많이 들어봤지만 제대로 설명해보라고 하면 자신 없었다.

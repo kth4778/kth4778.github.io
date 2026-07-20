@@ -4,8 +4,8 @@ date: 2026-06-11 22:00:00 +0900
 categories: [AI, Claude Code]
 tags: [claude-code, workflow, ai-tools, claude, work-loop, claude-md]
 image:
-  path: /assets/img/posts/claude-code-work-loop/chatbot-vs-work-loop.png
-  alt: 챗봇 방식과 작업 루프 방식 비교
+  path: /assets/img/posts/claude-code-work-loop/thumbnail.webp
+  alt: 일회성 챗 방식과 계획·실행·검증이 순환하는 작업 루프를 비교한 화이트보드
 ---
 
 SW마에스트로에서 팀 프로젝트 개발하면서 Claude Code를 꽤 오래 썼는데, 최근에 온보딩 문서랑 특강 슬라이드를 제대로 읽고 나서 "아, 나 이걸 완전 잘못 쓰고 있었다" 싶었다. 그냥 채팅창처럼 쓰고 있었던 거다.

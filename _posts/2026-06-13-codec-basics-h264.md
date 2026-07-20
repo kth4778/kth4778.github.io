@@ -4,8 +4,8 @@ date: 2026-06-13 09:00:00 +0900
 categories: [백엔드, 스트리밍]
 tags: [codec, h264, yuv, chroma-subsampling, dct, gop, iframe, pframe, bframe, ffmpeg, streaming, macroblock, cabac, crf, preset, profile]
 image:
-  path: /assets/img/posts/codec-basics-h264/raw-vs-compressed-size.png
-  alt: 비압축 671 GB vs H.264 압축 후 4 GB 용량 비교
+  path: /assets/img/posts/codec-basics-h264/thumbnail.webp
+  alt: 무압축 영상 용량을 단계별로 계산해 671GB가 나오고 H.264로 4GB가 되는 과정을 적은 모눈종이
 ---
 
 HLS, DASH, WebRTC를 공부하면서 계속 넘어갔던 질문이 하나 있었다.

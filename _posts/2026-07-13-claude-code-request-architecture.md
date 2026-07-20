@@ -4,8 +4,8 @@ date: 2026-07-13 23:30:00 +0900
 categories: [AI, Claude Code]
 tags: [claude-code, work-contract, prompt-engineering, verification, code-review, workflow, git-diff, regression-testing]
 image:
-  path: /assets/img/posts/claude-code-request-architecture/contract-five-elements-vs-blank-guess.png
-  alt: 작업 계약 5요소가 빈칸 추측을 막는 구조
+  path: /assets/img/posts/claude-code-request-architecture/thumbnail.webp
+  alt: 요청에 담을 다섯 항목을 리갈패드에 번호 붙여 적은 손글씨 메모
 ---
 
 Skills랑 Auto Memory 세팅하고 나서 신났었는데, 정작 그 커맨드들로 실제 작업 요청을 넣을 때마다 여전히 사고가 났다. "이거 좀 고쳐줘"라고 짧게 던지면 십중팔구 뭔가 하나씩 더 바뀌어 있었다. 이번엔 그 요청 자체를 어떻게 써야 하는지 제대로 정리해봤다.
